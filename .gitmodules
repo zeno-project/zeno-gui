@@ -1,3 +1,4 @@
 [submodule "cryptonote"]
 	path = cryptonote
 	url = https://github.com/zeno-project/zeno.git
+	branch = gui
