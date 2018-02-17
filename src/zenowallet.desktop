@@ -1,0 +1,10 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=zeno Wallet
+Comment=zeno wallet
+Exec=zeno %U
+Terminal=false
+Type=Application
+Icon=zeno
+MimeType=x-scheme-handler/zeno;
+Categories=Office;Finance;
