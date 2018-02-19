@@ -87,7 +87,7 @@ public:
     void retranslateUi(QFrame *PrivacyFrame)
     {
         PrivacyFrame->setWindowTitle(QApplication::translate("PrivacyFrame", "Frame", 0));
-        m_newsCheck->setText(QApplication::translate("PrivacyFrame", "I want to see zeno Blog feeds", 0));
+        m_newsCheck->setText(QApplication::translate("PrivacyFrame", "I want to see Zeno Blog feeds", 0));
         m_embeddedHelperLabel->setText(QApplication::translate("PrivacyFrame", "Checking this box will result in updated Overview screen. It will now show you the latest posts of zeno Blog providing you with fresh zeno news.", 0));
     } // retranslateUi
 

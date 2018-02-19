@@ -58,7 +58,7 @@ BlogReader::~BlogReader() {
 }
 
 QString BlogReader::getName() const {
-  return tr("zeno Blog:");
+  return tr("Zeno Blog:");
 }
 
 QPixmap BlogReader::getIcon() const {

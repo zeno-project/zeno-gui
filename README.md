@@ -1,14 +1,14 @@
-## About zeno
+## About Zeno
 
-zeno is a cryptocurrency focused on providing a decentralized mechanism of exchange, and anonymity via untraceable and unlinkable transactions.
+Zeno is a cryptocurrency focused on providing a decentralized mechanism of exchange, and anonymity via untraceable and unlinkable transactions.
 
-You can read more about it at https://coin.inbest.cloud
+You can read more about it at https://zeno.org
 
-## About zeno-gui
+## About Zeno-gui
 
-This in a multi platform GUI wallet for zeno.
+This in a multi platform GUI wallet for Zeno.
 
-## Building zeno-gui
+## Building Zeno-gui
 
 ### 1. Clone wallet sources
 

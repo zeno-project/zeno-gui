@@ -620,7 +620,7 @@
             <enum>Qt::NoFocus</enum>
            </property>
            <property name="text">
-            <string>SEND zenoS</string>
+            <string>SEND ZENO</string>
            </property>
            <property name="checkable">
             <bool>true</bool>
@@ -921,7 +921,7 @@
     <bool>true</bool>
    </property>
    <property name="text">
-    <string>About zeno</string>
+    <string>About Zeno</string>
    </property>
   </action>
   <action name="m_aboutQtAction">

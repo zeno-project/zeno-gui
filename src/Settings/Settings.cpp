@@ -70,7 +70,7 @@ const quint64 DEFAULT_OPTIMIZATION_THRESHOLD = 10000000000000;
 const quint64 DEFAULT_OPTIMIZATION_MIXIN = 6;
 
 const quint64 VERSION_MAJOR = 1;
-const quint64 VERSION_MINOR = 4;
+const quint64 VERSION_MINOR = 0;
 const quint64 VERSION_PATCH = 1;
 
 }
@@ -82,7 +82,7 @@ Settings& Settings::instance() {
 
 
 Settings::Settings() : m_p2pBindPort(0), m_cmdLineParser(nullptr) {
-  m_defaultPoolList << "45.32.171.89:4444";
+  m_defaultPoolList << "35.204.236.181:3333";
 
   Style* lightStyle = new LightStyle();
   Style* darkStyle = new DarkStyle();
@@ -493,8 +493,8 @@ bool Settings::isStartOnLoginEnabled() const {
   res = QFile::exists(autorunFilePath);
 #elif defined(Q_OS_WIN)
   QSettings autorunSettings("HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Run", QSettings::NativeFormat);
-  res = autorunSettings.contains("zenoWallet") &&
-    !QDir::fromNativeSeparators(autorunSettings.value("zenoWallet").toString().split(' ')[0]).compare(QCoreApplication::applicationFilePath());
+  res = autorunSettings.contains("ZenoWallet") &&
+    !QDir::fromNativeSeparators(autorunSettings.value("ZenoWallet").toString().split(' ')[0]).compare(QCoreApplication::applicationFilePath());
 #endif
   return res;
 }
@@ -688,7 +688,7 @@ void Settings::setStartOnLoginEnabled(bool _enable) {
     if (_enable) {
       autorunFile.write("[Desktop Entry]\n");
       autorunFile.write("Type=Application\n");
-      autorunFile.write("Name=zeno Wallet\n");
+      autorunFile.write("Name=Zeno Wallet\n");
       autorunFile.write(QString("Exec=%1 --minimized\n").arg(QCoreApplication::applicationFilePath()).toLocal8Bit());
       autorunFile.write("Terminal=false\n");
       autorunFile.write("Hidden=false\n");
@@ -700,9 +700,9 @@ void Settings::setStartOnLoginEnabled(bool _enable) {
     QSettings autorunSettings("HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Run", QSettings::NativeFormat);
     if (_enable) {
       QString appPath = QString("%1 --minimized").arg(QDir::toNativeSeparators(QCoreApplication::applicationFilePath()));
-      autorunSettings.setValue("zenoWallet", appPath);
+      autorunSettings.setValue("ZenoWallet", appPath);
     } else {
-      autorunSettings.remove("zenoWallet");
+      autorunSettings.remove("ZenoWallet");
     }
 #endif
   }

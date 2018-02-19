@@ -1,7 +1,7 @@
 [Desktop Entry]
 Encoding=UTF-8
-Name=zeno Wallet
-Comment=zeno wallet
+Name=Zeno Wallet
+Comment=Zeno wallet
 Exec=zeno %U
 Terminal=false
 Type=Application
